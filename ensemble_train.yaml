@@ -1,0 +1,5 @@
+best_run_id: "455e536bd0e74d8396a0eff5a61611ce"  # run id for the best child run from the single model experiment
+device: "cuda"
+num_components: 10
+adversarial: True
+use_current_date: False

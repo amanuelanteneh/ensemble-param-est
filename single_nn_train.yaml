@@ -1,0 +1,20 @@
+model: 
+  model_type: "hist"
+  hidden_layer_sizes: [100, 50, 30]
+  device: "cuda"
+
+data:
+  fraction: 0.01  # fraction of original training data to use
+  feature_noise_std: 0.0
+  label_noise_std: 0.28
+  test_set_feature_noise_std: 0.0
+  seed: 42
+
+epochs_per_val: 1
+
+mlflow:
+  use_current_date: False
+
+optuna:
+  num_trials: 20
+  objective_metric: "rmse"
